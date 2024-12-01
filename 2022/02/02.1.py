@@ -1,15 +1,12 @@
 # value, win, tie
-mapping = {
-    "X": (1, "C", "A"),
-    "Y": (2, "A", "B"),
-    "Z": (3, "B", "C")
-}
+mapping = {"X": (1, "C", "A"), "Y": (2, "A", "B"), "Z": (3, "B", "C")}
+
 
 def execute():
     total = 0
     with open("input.txt", "r") as f:
         for line in f:
-            opp, val = line.strip('\n').split(' ')
+            opp, val = line.strip("\n").split(" ")
 
             self_val = mapping[val]
 
@@ -18,6 +15,7 @@ def execute():
             total += self_val[0] + win
 
     print(total)
+
 
 if __name__ == "__main__":
     execute()

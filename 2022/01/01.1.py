@@ -3,7 +3,7 @@ def execute():
     with open("input.txt", "r") as f:
         cum_sum = 0
         for line in f:
-            line = line.strip('\n')
+            line = line.strip("\n")
 
             if len(line) == 0:
                 max_val = max(cum_sum, max_val)

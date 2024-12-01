@@ -2,11 +2,12 @@ import math
 import sys
 import copy
 
+
 def solve() -> int:
     sys.setrecursionlimit(200000)
-    file = open('input.txt', 'r')
+    file = open("input.txt", "r")
     read = file.readlines()
-    stripped = map(lambda s : s.replace("\n", ""), read)
+    stripped = map(lambda s: s.replace("\n", ""), read)
 
     left = []
     right = []
@@ -30,5 +31,6 @@ def solve() -> int:
     print(f"Difference: {total}")
     print(f"Similarity: {similarity}")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     solve()

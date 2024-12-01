@@ -1,11 +1,12 @@
 from queue import PriorityQueue
 
+
 def execute():
     vals = PriorityQueue()
     with open("input.txt", "r") as f:
         cum_sum = 0
         for line in f:
-            line = line.strip('\n')
+            line = line.strip("\n")
 
             if len(line) == 0:
                 vals.put(-1 * cum_sum)
