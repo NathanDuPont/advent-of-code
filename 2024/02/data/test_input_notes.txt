@@ -1,0 +1,25 @@
+Normal, increasing
+Normal, decreasing
+Drop first
+Drop last
+Drop middle
+Drop middle
+Drop middle
+Drop duplicate
+Drop first single reverse
+Drop last single reverse
+Drop middle single reverse
+Drop second to last value
+Drop second value
+Unsafe - large gap
+Unsafe - large gap reversed
+Unsafe - gap and drop
+Unsafe - gap and drop
+Unsafe - triple value
+Unsafe - triple value reversed
+Unsafe - reverse directions
+Unsafe - reverse directions
+Unsafe - double skip
+Unsafe - Drop middle and end
+Unsafe - Drop beginning and middle
+Unsafe - Drop beginning and end

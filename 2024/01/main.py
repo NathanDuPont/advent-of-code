@@ -1,11 +1,10 @@
-import math
 import sys
-import copy
+from pathlib import Path
 
 
 def solve() -> int:
     sys.setrecursionlimit(200000)
-    file = open("input.txt", "r")
+    file = open(Path(__file__).resolve().parent / "data/input.txt", "r")
     read = file.readlines()
     stripped = map(lambda s: s.replace("\n", ""), read)
 

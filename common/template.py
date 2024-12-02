@@ -1,16 +1,20 @@
-import math
+from pathlib import Path
 import sys
-import copy
 
 
-def solve() -> int:
+def configure():
     sys.setrecursionlimit(200000)
-    file = open("input.txt", "r")
-    read = file.readlines()
-    stripped = map(lambda s: s.replace("\n", ""), read)
-    for i, l in enumerate(stripped):
-        pass
 
 
-if __name__ == "main":
-    print(solve())
+def solve():
+    file_content = []
+    with open(Path(__file__).resolve().parent / "data/input1.txt", "r") as f:
+        lines = f.readlines()
+        content = map(lambda s: s.replace("\n", ""), lines)
+
+    print(f"Output: {'TODO'}")
+
+
+if __name__ == "__main__":
+    configure()
+    solve()
