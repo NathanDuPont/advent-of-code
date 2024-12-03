@@ -17,7 +17,7 @@ void configure(int argc, char *argv[]) {
 }
 
 void solve() {
-  ifstream fs("XXXX/XX/data/input.txt");
+  ifstream fs("2024/04/data/input.txt");
 
   if (fs.is_open()) {
     string l;
