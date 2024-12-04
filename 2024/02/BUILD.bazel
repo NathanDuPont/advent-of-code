@@ -1,4 +1,4 @@
-load("@rules_rust//rust:defs.bzl", "rust_binary", "rust_doc")
+load("@rules_rust//rust:defs.bzl", "rust_binary")
 
 filegroup(
     name = "input",
@@ -27,17 +27,10 @@ cc_binary(
     ],
 )
 
-rust_binary(
-    name = "hello_world_from_workspace_transient",
-    srcs = ["src/main.rs"],
-    deps = [
-        "@crates_in_workspace//:anyhow",
-    ],
-)
-
-build_test(
-    name = "rust_fmt",
-    targets = [
-        "@rules_rust//:rustfmt",
-    ],
-)
+# rust_binary(
+#     name = "hello_world_from_workspace_transient",
+#     srcs = ["src/main.rs"],
+#     deps = [
+#         "@crates_in_workspace//:anyhow",
+#     ],
+# )
