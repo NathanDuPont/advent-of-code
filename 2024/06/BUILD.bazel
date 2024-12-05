@@ -1,0 +1,26 @@
+filegroup(
+    name = "input",
+    srcs = glob([
+        "data/*.txt",
+    ]),
+)
+
+cc_binary(
+    name = "main",
+    srcs = [
+        "main.cpp",
+    ],
+    args = [
+        "--logtostdout",
+    ],
+    copts = [
+        "-std=c++17",
+    ],
+    data = [
+        ":input",
+    ],
+    deps = [
+        "@gflags",
+        "@glog",
+    ],
+)
